@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howell Keith Rosales - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for smooth scrolling and Inter font */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Basic styles for sections for better visual separation */
+        section {
+            padding: 4rem 1rem; /* Responsive padding */
+        }
+
+        /* Styling for navigation links */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #6366f1; /* Indigo 500 on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <!-- Brand/Name -->
+            <a href="#hero" class="text-2xl font-bold text-gray-900 rounded-lg p-2 hover:text-indigo-600 transition-colors">
+                HKR
+            </a>
+            <!-- Navigation Links -->
+            <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 mt-4 md:mt-0">
+                <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 transition-colors font-medium rounded-lg px-3 py-2">About</a>
+                <a href="#skills" class="nav-link text-gray-700 hover:text-indigo-600 transition-colors font-medium rounded-lg px-3 py-2">Skills</a>
+                <a href="#projects" class="nav-link text-gray-700 hover:text-indigo-600 transition-colors font-medium rounded-lg px-3 py-2">Projects</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 transition-colors font-medium rounded-lg px-3 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/About Me Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-50 to-indigo-50 text-center px-4">
+        <div class="max-w-4xl mx-auto py-12">
+            <!-- Profile Picture Placeholder -->
+            <img src="https://placehold.co/150x150/e0e7ff/4338ca?text=PP" alt="Profile Picture" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-lg object-cover">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4 animate-fade-in-down">
+                Hi, I'm <span class="text-indigo-600">Howell Keith Rosales</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in-up">
+                A passionate <span class="font-semibold text-indigo-500">Technical Support Engineer</span> focused on building engaging and efficient web applications.
+            </p>
+            <a href="#projects" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition-all transform hover:scale-105">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16 px-4 rounded-lg shadow-lg mx-auto max-w-7xl my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                I'm a dedicated software developer with a strong foundation in front-end and back-end technologies. My journey in tech started with a fascination for how things work and a desire to build solutions that make an impact. I thrive in collaborative environments and am constantly learning new technologies to improve my craft. When I'm not coding, you can find me exploring new hiking trails or experimenting with new recipes in the kitchen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-16 px-4 rounded-lg shadow-lg mx-auto max-w-7xl my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <!-- Example Skill Cards -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Frontend</h3>
+                    <ul class="text-gray-700 text-left list-disc list-inside">
+                        <li>HTML5, CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Backend</h3>
+                    <ul class="text-gray-700 text-left list-disc list-inside">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Python (Django/Flask)</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Databases</h3>
+                    <ul class="text-gray-700 text-left list-disc list-inside">
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Firestore</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Tools & Others</h3>
+                    <ul class="text-gray-700 text-left list-disc list-inside">
+                        <li>Git, GitHub</li>
+                        <li>Docker</li>
+                        <li>AWS (S3, EC2)</li>
+                        <li>Jest, React Testing Library</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16 px-4 rounded-lg shadow-lg mx-auto max-w-7xl my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Item 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/400x250/d1d5db/374151?text=Project+1" alt="Project 1 Thumbnail" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Project Title One</h3>
+                        <p class="text-gray-700 mb-4">A brief description of your first project, highlighting its purpose and key features. Mention technologies used.</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="bg-indigo-200 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors mr-4">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-medium transition-colors">GitHub Repo</a>
+                    </div>
+                </div>
+                <!-- Project Item 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/400x250/d1d5db/374151?text=Project+2" alt="Project 2 Thumbnail" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Project Title Two</h3>
+                        <p class="text-gray-700 mb-4">Description of your second project. What problem did it solve? What was your role?</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-purple-200 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                        </div>
+                        <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors mr-4">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-medium transition-colors">GitHub Repo</a>
+                    </div>
+                </div>
+                <!-- Project Item 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow transform hover:scale-105">
+                    <img src="https://placehold.co/400x250/d1d5db/374151?text=Project+3" alt="Project 3 Thumbnail" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Project Title Three</h3>
+                        <p class="text-gray-700 mb-4">Details about your third project. What did you learn? What was challenging?</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">HTML</span>
+                            <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">CSS</span>
+                            <span class="bg-green-200 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        </div>
+                        <a href="#" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium transition-colors mr-4">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-medium transition-colors">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16 px-4 rounded-lg shadow-lg mx-auto max-w-7xl my-8">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Have a project in mind or just want to chat? Feel free to reach out! I'm always open to new opportunities and collaborations.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:your.email@example.com" class="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-all transform hover:scale-105 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.3 0H3.7C1.652 0 0 1.652 0 3.7v12.6C0 18.348 1.652 20 3.7 20h12.6c2.048 0 3.7-1.652 3.7-3.7V3.7C20 1.652 18.348 0 16.3 0zM6.9 17.5h-2.8V7.3h2.8v10.2zM5.5 6.1a1.6 1.6 0 110-3.2 1.6 1.6 0 010 3.2zM17.5 17.5h-2.8v-5c0-1.2-.5-2.2-1.7-2.2-1.2 0-1.8.8-1.8 2.2v5h-2.8V7.3h2.8v1.2c.4-.7 1.3-1.6 2.6-1.6 2.3 0 4.1 1.5 4.1 4.7v5.9z" clip-rule="evenodd"></path></svg>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="bg-gray-800 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-gray-900 transition-all transform hover:scale-105 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.418 2.865 8.169 6.839 9.488.5.09.682-.217.682-.483 0-.237-.008-.868-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.107-1.464-1.107-1.464-.905-.619.068-.607.068-.607 1.002.07 1.531 1.029 1.531 1.029.89 1.528 2.336 1.088 2.903.832.09-.645.349-1.088.635-1.339-2.22-.252-4.555-1.111-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.252-.446-1.27.098-2.65S9.467.5 10 0z" clip-rule="evenodd"></path></svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-6 text-center mt-8 rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Howell Keith Rosales. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling (optional, but good for user experience) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple animation on scroll (optional, but adds a nice touch)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up'); /* Example animation class */
+                    entry.target.classList.remove('opacity-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Apply a base opacity for animation targets
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('opacity-0'); /* Hidden by default */
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
